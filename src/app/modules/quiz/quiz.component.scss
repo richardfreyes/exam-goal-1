@@ -1,6 +1,10 @@
 @import "../../../assets/theme/theme";
 
 .quiz {
+  &__lists {
+    padding-left: 15px;
+  }
+
   &__question {
     margin-bottom: 0.5rem;
     display: block;

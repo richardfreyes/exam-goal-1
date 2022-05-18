@@ -2,24 +2,27 @@
   <div class="box-shadow" *ngIf="!isSubmittedSuccess">
     <form [formGroup]="quizForm" (ngSubmit)="handleOnSubmitAnswer(quizForm)">
       <h1 class="quiz__title title">AngularJS Quiz</h1>
-      <div class="quiz__list shadow-book" [ngClass]="{required: ans.controls[answerIndex].invalid && isSubmitted}" formArrayName="answersId" *ngFor="let question of questionsData; let answerIndex = index">
-        <div class="quiz__quiz-holder" [formGroupName]="answerIndex">
-          <label class="quiz__question" id="{{question?.id}}">{{ question?.question }}*</label>
-          <mat-radio-group class="quiz__radio-group" formControlName="answer" attr.aria-labelledby="{{question?.id}}">
-            <div class="quiz__radio-button-holder">
-              <mat-radio-button 
-                class="quiz__radio-button radio-button" 
-                id="a{{answerIndex}}{{option?.optionId}}"
-                *ngFor="let option of question?.options" 
-                [value]="option?.optionId" 
-                [checked]="false"
-                ngDefaultControl 
-                (click)="handleChooseAnswer(option?.optionId, answerIndex)"
-              >{{option?.name}}</mat-radio-button>
-            </div>
-          </mat-radio-group>
-        </div>
-      </div>
+      <ol class="quiz__lists">
+        <li class="quiz__list shadow-book" [ngClass]="{required: ans.controls[answerIndex].invalid && isSubmitted}" formArrayName="answersId" *ngFor="let question of questionsData; let answerIndex = index">
+          <div class="quiz__quiz-holder" [formGroupName]="answerIndex">
+            <label class="quiz__question" id="{{question?.id}}">{{ question?.question }}*</label>
+            <mat-radio-group class="quiz__radio-group" formControlName="answer" attr.aria-labelledby="{{question?.id}}">
+              <div class="quiz__radio-button-holder">
+                <mat-radio-button 
+                  class="quiz__radio-button radio-button" 
+                  id="a{{answerIndex}}{{option?.optionId}}"
+                  *ngFor="let option of question?.options" 
+                  [value]="option?.optionId" 
+                  [checked]="false"
+                  ngDefaultControl 
+                  (click)="handleChooseAnswer(option?.optionId, answerIndex)"
+                >{{option?.name}}</mat-radio-button>
+              </div>
+            </mat-radio-group>
+          </div>
+        </li>
+      </ol>
+
 
       <app-button type="raised" class="quiz__btn quiz__btn--submit" text="Submit" buttonType="submit" color="primary"></app-button>
       <app-button type="raised" class="quiz__btn quiz__btn--reset" addClass="btn btn__reset" text="Reset" buttonType="reset" color="warn"></app-button>
