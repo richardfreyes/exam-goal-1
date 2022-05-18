@@ -36,7 +36,5 @@ export class RatingComponent implements OnInit {
     if(value >= 78 && value <= 84) { this.grade = { writtenGrade: 'B', equivalence: `${value}%`, description: 'Very Good' } }
     if(value >= 85 && value <= 91) { this.grade = { writtenGrade: 'B+', equivalence: `${value}%`, description: 'Very Good' } }
     if(value >= 92 && value <= 100) { this.grade = { writtenGrade: 'A', equivalence: `${value}%`, description: 'Excellent' } }
-    console.log('this.result', this.result);
-    console.log('this.grade', this.grade);
   }
 }

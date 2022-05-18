@@ -1,0 +1,4 @@
+<div ngSwitch="{{type}}">
+  <button *ngSwitchCase="'raised'" [class]="addClass" [type]="buttonType" [color]="color" mat-raised-button>{{text}}</button>
+  <button *ngSwitchDefault mat-raised-button color="primary" type="submit">Submit</button>
+</div>

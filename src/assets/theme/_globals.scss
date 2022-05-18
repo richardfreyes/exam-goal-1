@@ -41,3 +41,52 @@
 mat-spinner {
   margin: auto;
 }
+
+.title {
+  margin-bottom: 2rem;
+  padding: 0.2rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  border-top: 1px solid var(--color-grey-3);
+  border-bottom: 1px solid var(--color-grey-3);
+}
+
+.shadow-book {
+  position: relative;
+  padding: 15px;
+  background: var(--bg-color-white);
+  border: 1px solid var(--bg-color-white);
+  @include boxshadow(0 0 20px 0px var(--color-grey));
+
+  &.required {
+    border: 1px solid var(--color-red);
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    bottom: 15px;
+    z-index: -1;
+    width: 50%;
+    max-width: 300px;
+    background: var(--bg-color-white);
+    @include boxshadow(0 15px 10px #777);
+  }
+
+  &::before {
+    left: 10px;
+    @include transform(rotate(-3deg))
+  }
+
+  &::after {
+    right: 10px;
+    @include transform(rotate(3deg))
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}

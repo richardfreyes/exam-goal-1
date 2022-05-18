@@ -1,10 +1,10 @@
 <div class="result box-shadow">
-  <h1 class="result__title">Result</h1>
+  <h1 class="result__title title">Result</h1>
   <app-rating [result]="result"></app-rating>
   <h2>Summary</h2>
   <div>
     <ol class="result__quiz-lists">
-      <li *ngFor="let question of data" class="result__quiz-list">
+      <li *ngFor="let question of data" class="result__quiz-list shadow-book" [ngClass]="{correct: question?.selected == question?.answer }">
         <div *ngIf="question?.type === 'multipleChoice' || question?.type === 'yesNo'">
           {{question.question}}
           <p class="result__text"><strong>Your Answer:</strong> {{question?.options[question?.selected - 1]?.name ? question?.options[question?.selected - 1]?.name : 'No Answer'}} - <app-correct-state [state]="question?.selected == question?.answer"></app-correct-state></p>

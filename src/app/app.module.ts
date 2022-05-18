@@ -15,6 +15,7 @@ import { QuizResultComponent } from './modules/shared/components/quiz-result/qui
 import { RatingComponent } from './modules/shared/components/rating/rating.component';
 import { CorrectStateComponent } from './modules/shared/components/correct-state/correct-state.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ButtonComponent } from './modules/shared/components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     QuizComponent,
     QuizResultComponent,
     RatingComponent,
-    CorrectStateComponent
+    CorrectStateComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

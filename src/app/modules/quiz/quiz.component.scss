@@ -1,16 +1,6 @@
 @import "../../../assets/theme/theme";
 
-.home {
-  &__title {
-    margin-bottom: 2rem;
-  }
-
-  &__quiz-list {
-    &:not(:last-child) {
-      margin-bottom: 1.5rem;
-    }
-  }
-
+.quiz {
   &__question {
     margin-bottom: 0.5rem;
     display: block;
@@ -23,5 +13,25 @@
   &__radio-button-holder {
     @include flexbox;
     flex-direction: column;
+  }
+
+  &__btn {
+    display: inline-block;
+
+    &--submit {
+      margin-top: 2rem;
+    }
+
+    &--reset {
+      position: fixed;
+      right: 0;
+      top: 30%;
+      border-radius: 0;
+    }
+  }
+
+  @include respond-to(md-up) {
+    width: 65%;
+    margin: auto;
   }
 }
