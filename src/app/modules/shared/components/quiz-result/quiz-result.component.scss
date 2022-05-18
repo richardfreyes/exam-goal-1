@@ -1,0 +1,11 @@
+.result {
+  &__text {
+    margin: 0;
+  }
+
+  &__quiz-list {
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+}

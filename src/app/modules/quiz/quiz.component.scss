@@ -1,0 +1,27 @@
+@import "../../../assets/theme/theme";
+
+.home {
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__quiz-list {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__question {
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  &__radio-group {
+    display: inline-block;
+  }
+
+  &__radio-button-holder {
+    @include flexbox;
+    flex-direction: column;
+  }
+}

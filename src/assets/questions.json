@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1, 
+    "type": "multipleChoice",
+    "question": "Which of the following statement is correct for AngularJS?",
+    "options": [
+      { "optionId": 1, "name": "A. AngularJS is an HTML framework" },
+      { "optionId": 2, "name": "B. AngularJS is a Java framework" },
+      { "optionId": 3, "name": "C. AngularJS is a JavaScript framework" },
+      { "optionId": 4, "name": "D. AngularJS is a SQL framework" }
+    ],
+    "answer": 3,
+    "answerDesc": "C is the correct option. AngularJS is a JavaScript framework.",
+    "selected": 0
+  },
+  {
+    "id": 2, 
+    "type": "multipleChoice",
+    "question": "On which of the Architectural pattern AngularJS is based?",
+    "options": [
+      { "optionId": 1, "name": "A. Observer Pattern" },
+      { "optionId": 2, "name": "B. Decorator pattern" },
+      { "optionId": 3, "name": "C. MVC Architecture pattern" },
+      { "optionId": 4, "name": "D. MVVM Architectural pattern" }
+    ],
+    "answer": 4,
+    "answerDesc": "D is the correct option. AngularJS is based on MVVM Architectural pattern.",
+    "selected": 0
+  },
+  {
+    "id": 3, 
+    "type": "multipleChoice",
+    "question": "AngularJS is perfect for?",
+    "options": [
+      { "optionId": 1, "name": "A. SPAs" },
+      { "optionId": 2, "name": "B. MPAs" },
+      { "optionId": 3, "name": "C. DPAs" },
+      { "optionId": 4, "name": "D. CPAs" }
+    ],
+    "answer": 1,
+    "answerDesc": "A is the correct option. AngularJS is perfect for Single Page Applications (SPAs).",
+    "selected": 0
+  },
+  {
+    "id": 4, 
+    "type": "multipleChoice",
+    "question": "Which of the following is the correct syntax for writing AngularJS expressions?",
+    "options": [
+      { "optionId": 1, "name": "A. (expression)" },
+      { "optionId": 2, "name": "B. {{expression}}" },
+      { "optionId": 3, "name": "C. {{{expression}}}" },
+      { "optionId": 4, "name": "D. [expression]" }
+    ],
+    "answer": 2,
+    "answerDesc": "B is the correct option. The correct syntax for writing AngularJS expressions is: {{expression}}",
+    "selected": 0
+  },
+  {
+    "id": 5, 
+    "type": "multipleChoice",
+    "question": "Which of the following directive is used to bind the application data to the HTML view in AngularJS?",
+    "options": [
+      { "optionId": 1, "name": "A. ng-app directive" },
+      { "optionId": 2, "name": "B. ng-model directive" },
+      { "optionId": 3, "name": "C. ng-bind directive" },
+      { "optionId": 4, "name": "D. ng-init directive" }
+    ],
+    "answer": 3,
+    "answerDesc": "C is the correct option. The ng-bind directive is used to bind the application data to the HTML view in the AngularJS application.",
+    "selected": 0
+  },
+  {
+    "id": 6, 
+    "type": "yesNo",
+    "question": "Do AngularJS provide reusable components?",
+    "options": [
+      { "optionId": 1, "name": "A. Yes" },
+      { "optionId": 2, "name": "B. No" }
+    ],
+    "answer": 1,
+    "answerDesc": "A is the correct option. AngularJS provides reusable components.",
+    "selected": 0
+  },
+  {
+    "id": 7, 
+    "type": "yesNo",
+    "question": "In AngularJS, the $http service is used to make an Ajax call to the server.",
+    "options": [
+      { "optionId": 1, "name": "A. Yes" },
+      { "optionId": 2, "name": "B. No" }
+    ],
+    "answer": 1,
+    "answerDesc": "A: True. AngularJS provides $http control which works as a service to make the Ajax call read data from the server.",
+    "selected": 0
+  },
+  {
+    "id": 8, 
+    "type": "yesNo",
+    "question": "AngularJS facilitates developers to write less code and get more functionality.",
+    "options": [
+      { "optionId": 1, "name": "A. Yes" },
+      { "optionId": 2, "name": "B. No" }
+    ],
+    "answer": 1,
+    "answerDesc": "A: This is a true statement as AngularJS facilitates developers to write less code and get more functionality.",
+    "selected": 0
+  },
+  {
+    "id": 9, 
+    "type": "yesNo",
+    "question": "While using the factory method, we must first define a factory and then assign a method to it.",
+    "options": [
+      { "optionId": 1, "name": "A. Yes" },
+      { "optionId": 2, "name": "B. No" }
+    ],
+    "answer": 1,
+    "answerDesc": "A: This is a true statement. As using the factory method, we first define a factory and then assign a method to it.",
+    "selected": 0
+  },
+  {
+    "id": 10, 
+    "type": "yesNo",
+    "question": "OrderBy filter is applied to an expression using pipe character.",
+    "options": [
+      { "optionId": 1, "name": "A. Yes" },
+      { "optionId": 2, "name": "B. No" }
+    ],
+    "answer": 1,
+    "answerDesc": "A: This is a true statement. The OrderBy filter is applied to an expression using pipe characters.",
+    "selected": 0
+  }
+]

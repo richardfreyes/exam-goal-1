@@ -1,0 +1,27 @@
+<div *ngIf="jsonState">
+  <div class="home box-shadow" *ngIf="!isSubmitted">
+    <h1 class="home__title">AngularJS Quiz</h1>
+    <div *ngFor="let question of questionsData" class="home__quiz-list">
+      <div *ngIf="question?.type === 'multipleChoice' || question?.type === 'yesNo'">
+        <label class="home__question" id="{{question?.id}}">{{ question?.question }}</label>
+        <mat-radio-group attr.aria-labelledby="{{question?.id}}" class="home__radio-group">
+          <div class="home__radio-button-holder">
+            <mat-radio-button class="home__radio-button radio-button" *ngFor="let option of question?.options" [value]="option?.optionId" ngDefaultControl [(ngModel)]="question.selected">{{option?.name}}</mat-radio-button>
+          </div>
+        </mat-radio-group>
+      </div>
+    </div>
+  
+    <button mat-raised-button color="primary" (click)="handleOnSubmitAnswer()">Submit</button>
+  </div>
+  
+  <app-quiz-result [data]="questionsData" [result]="result" *ngIf="isSubmitted"></app-quiz-result>
+</div>
+
+<div class="box-shadow w-100" *ngIf="!jsonState && jsonState !== 0">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="box-shadow w-100" *ngIf="jsonState === 0">
+  <p class="err__label" >Error Fetching API</p>
+</div>

@@ -1,0 +1,9 @@
+.rating {
+  margin-bottom: 2rem;
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 0.3rem;
+    }
+  }
+}

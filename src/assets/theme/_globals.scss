@@ -1,0 +1,43 @@
+.radio-button {
+  margin: 0.2rem 0;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.box-shadow {
+  display: inline-block;
+  width: 100%;
+  margin: 4rem 0;
+  padding: 3rem 2rem;
+  @include boxshadow(0 0 20px 0px #dedede);
+}
+
+.status {
+  font-weight: bold;
+  
+  &.correct {
+    color: var(--color-green);
+  }
+  
+  &.wrong {
+    color: var(--color-red);
+  }
+}
+
+.err {
+  &__label {
+    padding: 50px 0;
+    text-align: center;
+    color: red;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+mat-spinner {
+  margin: auto;
+}
