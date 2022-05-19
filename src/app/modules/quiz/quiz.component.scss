@@ -1,4 +1,4 @@
-@import "../../../assets/theme/theme";
+@use "../../../assets/theme/theme" as mixin;
 
 .quiz {
   &__lists {
@@ -15,7 +15,7 @@
   }
 
   &__radio-button-holder {
-    @include flexbox;
+    @include mixin.flexbox;
     flex-direction: column;
   }
 
@@ -34,7 +34,7 @@
     }
   }
 
-  @include respond-to(md-up) {
+  @include mixin.respond-to(md-up) {
     width: 65%;
     margin: auto;
   }
